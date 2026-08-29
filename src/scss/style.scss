@@ -1,0 +1,114 @@
+@use 'lib' as * with(
+	$breakpoints: (
+		'xxxs': 360px,
+		'xxs': 480px,
+		'xs': 640px,
+		'sm': 780px,
+		'md': 960px,
+		'lg': 1100px,
+		'xlg': 1280px,
+		'xxlg': 1440px,
+		'xxxlg': 1680px,
+		'xxxxlg': 1928px
+	)
+);
+
+@use "../blocks/**/*.scss";
+
+// Подключение шрифтов
+
+// @include font-face("filename", "name", value);
+
+// ===== Дизайн-токены =====
+:root {
+	--background: #FFFFFF;    // фон страницы
+	--text: #1A1A1A;          // основной текст / тёмные панели
+	--text-muted: #D8D8D8;    // приглушённый текст
+	--text-secondary: #6B7079; // вторичный текст (серый)
+	--text-gray: #5A5A5A;    // серый текст (абзацы)
+	--accent: #ED1C24;        // акцент (красный)
+	--accent-2: #A66A3F;      // вторичный акцент (бронза)
+	--accent-3: #C8966A;      // третичный акцент (золото)
+	--accent-4: #8A6B3D;      // тёмная бронза (подписи/линии)
+	--success: #1F7A4D;       // зелёный (в наличии)
+	--surface-dark: #1A1614;  // тёмная подложка
+	--surface-dark-2: #14141A; // тёмная подложка (холодная)
+	--text-inverse: #F5F1EA;  // светлый текст на тёмном
+	--surface-warm: #F6F5F2;  // тёплая подложка (карточки)
+	--surface: #FAFAFA;       // светлая подложка
+	--border: #ECECEC;        // светлая граница
+	--border-strong: #333333; // граница на тёмном фоне
+	--placeholder: #E6E6E6;   // заглушка для картинок
+
+	--font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+	--size: 16px;
+}
+
+body, html {
+	background-color: var(--background);
+	font-size: var(--size);
+	color: var(--text);
+	font-family: var(--font);
+	line-height: 1.2;
+	font-weight: 400;
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
+// ===== Компенсация фиксированного хедера =====
+:root {
+	--header-height: 122px; // десктоп: верхняя панель + основная
+}
+
+@include media('<lg') {
+	:root {
+		--header-height: 78px; // мобилка: только основная панель
+	}
+}
+
+body {
+	padding-top: var(--header-height);
+}
+
+// ===== Базовые утилиты =====
+.container {
+	width: 100%;
+	max-width: 1320px;
+	margin-inline: auto;
+	padding-inline: fluid(24px, 16px);
+}
+
+.container--md {
+	max-width: 1200px;
+}
+
+.icon {
+	display: inline-block;
+	flex-shrink: 0;
+	width: 1em;
+	height: 1em;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+// заливная иконка (для брендовых логотипов)
+.icon--fill {
+	fill: currentColor;
+	stroke: none;
+}
+
+.footer {
+	flex: 0 0 auto; 
+	margin-top: auto; 
+}
+
+.sprite {
+	display: none;
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }

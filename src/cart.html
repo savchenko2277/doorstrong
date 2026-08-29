@@ -1,0 +1,93 @@
+@@include("_head.html", {"id":"cart"}) 
+@@include("_header.html") 
+
+<main class="cart">
+	<div class="container cart__inner">
+		<h1 class="cart__title">Корзина</h1>
+
+		<div class="cart__content">
+			<div class="cart__items">
+				<article class="cart__item" data-price="28900">
+					<div class="cart__item-img" aria-hidden="true"></div>
+					<div class="cart__item-info">
+						<div class="cart__item-brand">Гардиан</div>
+						<h2 class="cart__item-name">Дверь «Гранит»</h2>
+						<div class="cart__item-price">28 900 ₽ / шт</div>
+					</div>
+					<div class="cart__item-controls">
+						<div class="cart__qty">
+							<button class="cart__qty-btn cart__qty-btn_minus" type="button" aria-label="Уменьшить количество">−</button>
+							<span class="cart__qty-value">1</span>
+							<button class="cart__qty-btn cart__qty-btn_plus" type="button" aria-label="Увеличить количество">+</button>
+						</div>
+						<div class="cart__item-total">28 900 ₽</div>
+						<button class="cart__remove" type="button" aria-label="Удалить">
+							<svg class="icon"><use href="#close"></use></svg>
+						</button>
+					</div>
+				</article>
+
+				<article class="cart__item" data-price="42500">
+					<div class="cart__item-img" aria-hidden="true"></div>
+					<div class="cart__item-info">
+						<div class="cart__item-brand">Эльбор</div>
+						<h2 class="cart__item-name">Дверь «Премиум Люкс»</h2>
+						<div class="cart__item-price">42 500 ₽ / шт</div>
+					</div>
+					<div class="cart__item-controls">
+						<div class="cart__qty">
+							<button class="cart__qty-btn cart__qty-btn_minus" type="button" aria-label="Уменьшить количество">−</button>
+							<span class="cart__qty-value">2</span>
+							<button class="cart__qty-btn cart__qty-btn_plus" type="button" aria-label="Увеличить количество">+</button>
+						</div>
+						<div class="cart__item-total">85 000 ₽</div>
+						<button class="cart__remove" type="button" aria-label="Удалить">
+							<svg class="icon"><use href="#close"></use></svg>
+						</button>
+					</div>
+				</article>
+
+				<article class="cart__item" data-price="56800">
+					<div class="cart__item-img" aria-hidden="true"></div>
+					<div class="cart__item-info">
+						<div class="cart__item-brand">Torex</div>
+						<h2 class="cart__item-name">Дверь «Термо»</h2>
+						<div class="cart__item-price">56 800 ₽ / шт</div>
+					</div>
+					<div class="cart__item-controls">
+						<div class="cart__qty">
+							<button class="cart__qty-btn cart__qty-btn_minus" type="button" aria-label="Уменьшить количество">−</button>
+							<span class="cart__qty-value">1</span>
+							<button class="cart__qty-btn cart__qty-btn_plus" type="button" aria-label="Увеличить количество">+</button>
+						</div>
+						<div class="cart__item-total">56 800 ₽</div>
+						<button class="cart__remove" type="button" aria-label="Удалить">
+							<svg class="icon"><use href="#close"></use></svg>
+						</button>
+					</div>
+				</article>
+			</div>
+
+			<aside class="cart__summary">
+				<div class="cart__summary-title">Итого</div>
+				<div class="cart__summary-row">
+					<span>Товары (<span class="cart__summary-count">4</span>)</span>
+				</div>
+				<div class="cart__summary-total">
+					<span>К оплате</span>
+					<span class="cart__summary-total-value">170 700 ₽</span>
+				</div>
+				<a class="cart__checkout" href="checkout.html">Оформить заказ</a>
+				<a class="cart__continue" href="index.html">Продолжить покупки</a>
+			</aside>
+		</div>
+
+		<div class="cart__empty">
+			<svg class="icon cart__empty-icon"><use href="#cart"></use></svg>
+			<div>Корзина пуста</div>
+			<a class="cart__continue" href="index.html">Перейти в каталог</a>
+		</div>
+	</div>
+</main>
+
+@@include("_bottom.html")

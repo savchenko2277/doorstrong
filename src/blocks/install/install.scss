@@ -1,0 +1,228 @@
+@use "../../scss/lib" as *;
+
+.install {
+	position: relative;
+	background: var(--background);
+	padding-top: fluid(80px, 48px);
+	padding-bottom: fluid(77px, 48px);
+
+	// золотая линия сверху
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background: var(--accent-3);
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 40px;
+		align-items: center;
+
+		@include media('>=lg') {
+			grid-template-columns: 340px 1fr;
+			gap: 100px;
+		}
+	}
+
+	// Фото-карточка
+	&__media {
+		position: relative;
+		aspect-ratio: 3 / 4;
+		max-width: 340px;
+		margin-inline: auto;
+		overflow: hidden;
+		border-radius: 2px;
+		box-shadow: 0 24px 60px -30px rgba(28, 26, 23, 0.35);
+
+		@include media('>=lg') {
+			margin-inline: 0;
+		}
+	}
+
+	&__media-img {
+		position: absolute;
+		inset: 0;
+		background: var(--placeholder);
+	}
+
+	&__media-overlay {
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(180deg, rgba(28, 26, 23, 0) 60%, rgba(28, 26, 23, 0.45) 100%);
+	}
+
+	&__media-corner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 28px;
+		height: 28px;
+		background: var(--accent);
+		clip-path: polygon(0 0, 100% 0, 0 100%);
+	}
+
+	&__media-caption {
+		position: absolute;
+		left: 16px;
+		bottom: 16px;
+		max-width: 170px;
+		color: #fff;
+		font-size: 11px;
+		line-height: 1.4;
+		letter-spacing: 0.11px;
+	}
+
+	&__media-badge {
+		position: absolute;
+		right: 16px;
+		bottom: 16px;
+		padding: 3px 8px;
+		background: var(--accent);
+		color: #fff;
+		font-size: 9px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 1.08px;
+		line-height: 1.4;
+	}
+
+	// Контент
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__label {
+		margin-bottom: 16px;
+		padding-bottom: 3px;
+		border-bottom: 1px solid var(--accent-2);
+		color: var(--accent-2);
+		font-size: 13px;
+		font-style: italic;
+		letter-spacing: 0.13px;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		color: var(--text);
+		font-size: fluid-rem(46, 28);
+		font-weight: 600;
+		line-height: 1.1;
+	}
+
+	&__highlight {
+		color: var(--accent-3);
+		background-image: linear-gradient(rgba(237, 28, 36, 0.18), rgba(237, 28, 36, 0.18));
+		background-size: 100% 5px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+	}
+
+	&__text {
+		max-width: 560px;
+		margin-bottom: 28px;
+		color: var(--text-gray);
+		font-size: 14px;
+		line-height: 1.65;
+	}
+
+	// Шаги
+	&__steps {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 28px;
+	}
+
+	&__step {
+		display: flex;
+		align-items: flex-start;
+		gap: 18px;
+		padding: 17px 0;
+		border-top: 1px solid var(--border);
+
+		&:last-child {
+			border-bottom: 1px solid var(--border);
+		}
+	}
+
+	&__step-num {
+		width: 44px;
+		flex-shrink: 0;
+		color: var(--accent-3);
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.36px;
+	}
+
+	&__step-icon {
+		width: 17px;
+		height: 17px;
+		flex-shrink: 0;
+		margin-top: 2px;
+		color: var(--text-gray);
+	}
+
+	&__step-body {
+		flex: 1;
+	}
+
+	&__step-title {
+		margin-bottom: 5px;
+		color: var(--text);
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.25;
+	}
+
+	&__step-text {
+		color: var(--text-gray);
+		font-size: 14px;
+		line-height: 1.55;
+	}
+
+	// Нижний блок (CTA + заметка)
+	&__bottom {
+		display: flex;
+		align-items: center;
+		gap: 28px;
+		flex-wrap: wrap;
+	}
+
+	&__cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 14px;
+		padding: 15px 24px;
+		border-radius: 10px;
+		background: var(--accent-3);
+		color: #fff;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.28px;
+		box-shadow: 0 12px 28px -14px rgba(237, 28, 36, 0.55);
+		transition: background-color 0.2s;
+
+		.icon {
+			width: 18px;
+			height: 18px;
+		}
+
+		&:hover {
+			background: #b9855a;
+		}
+	}
+
+	&__note {
+		color: var(--text-gray);
+		font-size: 12px;
+		line-height: 1.5;
+	}
+}

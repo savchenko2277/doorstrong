@@ -1,0 +1,104 @@
+@@include("_head.html", {"id":"checkout"}) 
+@@include("_header.html") 
+
+<main class="checkout">
+	<div class="container checkout__inner">
+		<h1 class="checkout__title">Оформление заказа</h1>
+
+		<div class="checkout__content">
+			<form class="checkout__form" id="checkout-form" action="#" method="post">
+				<section class="checkout__section">
+					<div class="checkout__section-title">Контактные данные</div>
+					<div class="checkout__fields">
+						<div class="checkout__field">
+							<label class="checkout__label" for="checkout-name">Имя</label>
+							<input class="checkout__input" id="checkout-name" type="text" placeholder="Как к вам обращаться">
+						</div>
+						<div class="checkout__field">
+							<label class="checkout__label" for="checkout-phone">Телефон</label>
+							<input class="checkout__input" id="checkout-phone" type="tel" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="checkout__field checkout__field_full">
+							<label class="checkout__label" for="checkout-email">E-mail</label>
+							<input class="checkout__input" id="checkout-email" type="email" placeholder="example@mail.ru">
+						</div>
+					</div>
+				</section>
+
+				<section class="checkout__section">
+					<div class="checkout__section-title">Доставка</div>
+					<div class="checkout__field">
+						<label class="checkout__label" for="checkout-address">Адрес доставки</label>
+						<textarea class="checkout__textarea" id="checkout-address" placeholder="Город, улица, дом, квартира"></textarea>
+					</div>
+					<div class="checkout__options">
+						<label class="checkout__option">
+							<input class="checkout__option-input" type="radio" name="delivery" value="courier" checked>
+							<span class="checkout__option-dot" aria-hidden="true"></span>
+							<span class="checkout__option-text">
+								<span class="checkout__option-name">Курьером</span>
+								<span class="checkout__option-desc">Доставка до подъезда</span>
+							</span>
+						</label>
+						<label class="checkout__option">
+							<input class="checkout__option-input" type="radio" name="delivery" value="pickup">
+							<span class="checkout__option-dot" aria-hidden="true"></span>
+							<span class="checkout__option-text">
+								<span class="checkout__option-name">Самовывоз</span>
+								<span class="checkout__option-desc">Со склада в Москве</span>
+							</span>
+						</label>
+					</div>
+				</section>
+
+				<section class="checkout__section">
+					<div class="checkout__section-title">Оплата</div>
+					<div class="checkout__options">
+						<label class="checkout__option">
+							<input class="checkout__option-input" type="radio" name="payment" value="card" checked>
+							<span class="checkout__option-dot" aria-hidden="true"></span>
+							<span class="checkout__option-text">
+								<span class="checkout__option-name">Картой онлайн</span>
+								<span class="checkout__option-desc">Visa, Mastercard, МИР</span>
+							</span>
+						</label>
+						<label class="checkout__option">
+							<input class="checkout__option-input" type="radio" name="payment" value="cash">
+							<span class="checkout__option-dot" aria-hidden="true"></span>
+							<span class="checkout__option-text">
+								<span class="checkout__option-name">При получении</span>
+								<span class="checkout__option-desc">Наличными или картой</span>
+							</span>
+						</label>
+					</div>
+				</section>
+			</form>
+
+			<aside class="checkout__summary">
+				<div class="checkout__summary-title">Ваш заказ</div>
+				<div class="checkout__summary-list">
+					<div class="checkout__summary-item" data-price="28900" data-qty="1">
+						<span class="checkout__summary-item-name">Дверь «Гранит» <span>× 1</span></span>
+						<span class="checkout__summary-item-price">28 900 ₽</span>
+					</div>
+					<div class="checkout__summary-item" data-price="42500" data-qty="2">
+						<span class="checkout__summary-item-name">Дверь «Премиум Люкс» <span>× 2</span></span>
+						<span class="checkout__summary-item-price">85 000 ₽</span>
+					</div>
+					<div class="checkout__summary-item" data-price="56800" data-qty="1">
+						<span class="checkout__summary-item-name">Дверь «Термо» <span>× 1</span></span>
+						<span class="checkout__summary-item-price">56 800 ₽</span>
+					</div>
+				</div>
+				<div class="checkout__summary-total">
+					<span>Итого</span>
+					<span class="checkout__summary-total-value">0 ₽</span>
+				</div>
+				<button class="checkout__pay" type="submit" form="checkout-form">Оплатить</button>
+				<p class="checkout__note">Нажимая «Оплатить», вы соглашаетесь с <a href="#">политикой обработки персональных данных</a> и <a href="#">условиями оплаты</a>.</p>
+			</aside>
+		</div>
+	</div>
+</main>
+
+@@include("_bottom.html")

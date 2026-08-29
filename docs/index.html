@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css?v=1787967914676">
+    <title></title>
+</head>
+<body id="pages">
+<header class="header">
+    <div class="header__top">
+        <div class="container header__top-inner">
+            <nav class="header__top-nav" aria-label="Вспомогательная навигация" data-moved=".header__menu, lg, last">
+                <a class="header__top-link" href="#">О&#160;компании</a>
+                <a class="header__top-link" href="#">Оплата и&#160;доставка</a>
+                <a class="header__top-link" href="#">Гарантия</a>
+                <a class="header__top-link" href="#">Контакты</a>
+            </nav>
+
+            <div class="header__top-info" data-moved=".header__menu, lg, last">
+                <div class="header__schedule">
+                    <span class="header__schedule-dot"></span>
+                    <span class="header__schedule-text">ПН&#8211;ВС: 8:00&#160;&#8212; 22:00</span>
+                </div>
+
+                <a class="header__email" href="mailto:info@door-strong.ru">info@door-strong.ru</a>
+
+                <div class="header__social">
+                    <a class="header__social-link" href="#" aria-label="Поиск">
+                        <svg class="icon"><use href="#search"></use></svg>
+                    </a>
+                    <a class="header__social-link" href="cart.html" aria-label="Корзина">
+                        <svg class="icon"><use href="#cart"></use></svg>
+                        <span class="header__cart-count">0</span>
+                    </a>
+                    <a class="header__social-link" href="#" aria-label="WhatsApp">
+                        <svg class="icon"><use href="#whatsapp"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="container header__main-inner">
+            <a class="header__logo" href="main.html" aria-label="Door Strong">
+                <img class="header__logo-img" src="img/logo.webp" alt="Door Strong" width="114" height="28">
+            </a>
+
+            <nav class="header__menu" aria-label="Основная навигация">
+                <div class="header__catalog">
+                    <button class="header__menu-link header__menu-link_catalog" type="button" aria-expanded="false" aria-controls="catalog-list">
+                        <span>Каталог</span>
+                        <svg class="icon"><use href="#chevron"></use></svg>
+                    </button>
+                    <div class="header__catalog-list" id="catalog-list">
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Входные двери</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Межкомнатные двери</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Двери со&#160;стеклом</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Фурнитура</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Двери с&#160;установкой</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <span class="header__catalog-thumb" aria-hidden="true"></span>
+                            <span class="header__catalog-name">Акции и&#160;скидки</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="header__menu-link" href="#">Входные двери</a>
+                <a class="header__menu-link" href="#">Межкомнатные двери</a>
+                <a class="header__menu-link" href="#">Производители</a>
+                <a class="header__menu-link" href="#">Двери с&#160;установкой</a>
+            </nav>
+
+            <div class="header__actions">
+                <a class="header__phone" href="tel:+79957814960">
+                    <span class="header__phone-icon">
+                        <svg class="icon"><use href="#phone"></use></svg>
+                    </span>
+                    <span class="header__phone-body">
+                        <span class="header__phone-number">+7&#160;995&#160;781-49-60</span>
+                        <span class="header__phone-note">Звонок бесплатный</span>
+                    </span>
+                </a>
+
+                <button class="header__burger" type="button" aria-label="Меню" aria-expanded="false">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="catalog" aria-hidden="true">
+    <div class="catalog__overlay" data-catalog-close></div>
+    <div class="catalog__panel" role="dialog" aria-modal="true" aria-label="Каталог">
+        <div class="catalog__head">
+            <div class="catalog__title">Каталог</div>
+            <button class="catalog__close" type="button" aria-label="Закрыть" data-catalog-close>
+                <svg class="icon"><use href="#close"></use></svg>
+            </button>
+        </div>
+        <div class="catalog__grid">
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Входные двери</span>
+            </a>
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Межкомнатные двери</span>
+            </a>
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Двери со&#160;стеклом</span>
+            </a>
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Фурнитура</span>
+            </a>
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Двери с&#160;установкой</span>
+            </a>
+            <a class="catalog__item" href="#">
+                <span class="catalog__thumb" aria-hidden="true"></span>
+                <span class="catalog__name">Акции и&#160;скидки</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<main class="pages">
+    <div class="container pages__inner">
+        <h1 class="pages__title">Страницы сайта</h1>
+
+        <div class="pages__list">
+            <a class="pages__item" href="main.html">
+                <span class="pages__item-text">
+                    <span class="pages__item-name">Главная</span>
+                    <span class="pages__item-desc">Лендинг со&#160;всеми секциями</span>
+                </span>
+                <svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+            </a>
+
+            <a class="pages__item" href="catalog.html">
+                <span class="pages__item-text">
+                    <span class="pages__item-name">Каталог</span>
+                    <span class="pages__item-desc">Каталог дверей с&#160;фильтрами</span>
+                </span>
+                <svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+            </a>
+
+            <a class="pages__item" href="cart.html">
+                <span class="pages__item-text">
+                    <span class="pages__item-name">Корзина</span>
+                    <span class="pages__item-desc">Изменение количества и&#160;удаление товаров</span>
+                </span>
+                <svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+            </a>
+
+            <a class="pages__item" href="checkout.html">
+                <span class="pages__item-text">
+                    <span class="pages__item-name">Оформление заказа</span>
+                    <span class="pages__item-desc">Форма заказа с&#160;оплатой</span>
+                </span>
+                <svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__accent" aria-hidden="true"></div>
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__brand">
+                <a class="footer__logo" href="main.html" aria-label="Door Strong">
+                    <img class="footer__logo-img" src="img/logo.webp" alt="Door Strong" width="196" height="48">
+                </a>
+                <p class="footer__desc">Надёжные двери для&#160;дома, офиса и&#160;улицы. Производство, доставка и&#160;установка под&#160;ключ.</p>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="#" aria-label="Telegram">
+                        <svg class="icon"><use href="#telegram"></use></svg>
+                    </a>
+                    <a class="footer__social-link" href="#" aria-label="WhatsApp">
+                        <svg class="icon"><use href="#whatsapp"></use></svg>
+                    </a>
+                    <a class="footer__social-link" href="#" aria-label="ВКонтакте">
+                        <svg class="icon icon--fill"><use href="#vk"></use></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Каталог</div>
+                <nav class="footer__nav" aria-label="Каталог">
+                    <a class="footer__link" href="#">Входные двери</a>
+                    <a class="footer__link" href="#">Межкомнатные двери</a>
+                    <a class="footer__link" href="#">Уличные двери</a>
+                    <a class="footer__link" href="#">Двери с&#160;терморазрывом</a>
+                    <a class="footer__link" href="#">Противопожарные двери</a>
+                    <a class="footer__link" href="#">Фурнитура</a>
+                </nav>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Покупателям</div>
+                <nav class="footer__nav" aria-label="Покупателям">
+                    <a class="footer__link" href="#">Доставка и&#160;оплата</a>
+                    <a class="footer__link" href="#">Установка</a>
+                    <a class="footer__link" href="#">Гарантия</a>
+                    <a class="footer__link" href="#">Акции</a>
+                    <a class="footer__link" href="#">Вопросы и&#160;ответы</a>
+                </nav>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Компания</div>
+                <nav class="footer__nav" aria-label="Компания">
+                    <a class="footer__link" href="#">О&#160;компании</a>
+                    <a class="footer__link" href="#">Производители</a>
+                    <a class="footer__link" href="#">Примеры установок</a>
+                    <a class="footer__link" href="#">Контакты</a>
+                </nav>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__title">Контакты</div>
+                <div class="footer__contacts">
+                    <div class="footer__contact">
+                        <span class="footer__contact-label">Телефон</span>
+                        <a class="footer__contact-value" href="tel:+79957814960">+7&#160;995&#160;781-49-60</a>
+                    </div>
+                    <div class="footer__contact">
+                        <span class="footer__contact-label">E-mail</span>
+                        <a class="footer__contact-value" href="mailto:info@door-strong.ru">info@door-strong.ru</a>
+                    </div>
+                    <div class="footer__contact">
+                        <span class="footer__contact-label">Адрес</span>
+                        <span class="footer__contact-value footer__contact-value_plain">Россия, г.&#160;Москва, Кавказский бульвар, дом&#160;5</span>
+                    </div>
+                    <div class="footer__contact">
+                        <span class="footer__contact-label">Время работы</span>
+                        <span class="footer__contact-value footer__contact-value_plain">ПН&#8211;ВС: 8:00&#160;&#8212; 22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__copyright">&#169; 2026 Door Strong. Все права защищены.</div>
+            <div class="footer__legal">
+                <a class="footer__legal-link" href="#">Политика конфиденциальности</a>
+                <span class="footer__legal-dot">&#183;</span>
+                <a class="footer__legal-link" href="#">Пользовательское соглашение</a>
+                <span class="footer__legal-dot">&#183;</span>
+                <a class="footer__legal-link" href="#">Реквизиты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="callback" aria-hidden="true">
+    <div class="callback__overlay" data-callback-close></div>
+    <div class="callback__panel" role="dialog" aria-modal="true" aria-label="Оставить заявку">
+        <button class="callback__close" type="button" aria-label="Закрыть" data-callback-close>
+            <svg class="icon"><use href="#close"></use></svg>
+        </button>
+
+        <div class="callback__title">Оставьте заявку</div>
+        <div class="callback__subtitle">Перезвоним в&#160;течение 15 минут и&#160;поможем подобрать дверь.</div>
+
+        <form class="callback__form" action="#" method="post">
+            <div class="callback__field">
+                <label class="callback__label" for="callback-name">Имя</label>
+                <input class="callback__input" id="callback-name" type="text" placeholder="Как к вам обращаться">
+            </div>
+
+            <div class="callback__field">
+                <label class="callback__label" for="callback-phone">Телефон</label>
+                <input class="callback__input" id="callback-phone" type="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+
+            <div class="callback__field">
+                <span class="callback__label">Куда нужна дверь</span>
+                <div class="callback__options">
+                    <label class="callback__option">
+                        <input class="callback__radio" type="radio" name="place" value="apartment" checked>
+                        <span>Квартира</span>
+                    </label>
+                    <label class="callback__option">
+                        <input class="callback__radio" type="radio" name="place" value="house">
+                        <span>Дом</span>
+                    </label>
+                    <label class="callback__option">
+                        <input class="callback__radio" type="radio" name="place" value="other">
+                        <span>Другое</span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="callback__submit" type="submit">Отправить заявку</button>
+
+            <p class="callback__consent">Нажимая &#171;Отправить заявку&#187;, вы&#160;соглашаетесь с&#160;<a href="#">политикой обработки персональных данных</a>.</p>
+        </form>
+    </div>
+</div>
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="calc" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M16 14v4M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="cart" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="chat" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="check" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="chevron" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="factory" xmlns="http://www.w3.org/2000/svg"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2ZM17 18h1M12 18h1M7 18h1"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="filter" xmlns="http://www.w3.org/2000/svg"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="grid" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="ruler" xmlns="http://www.w3.org/2000/svg"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0zM14.5 12.5l2-2M11.5 9.5l2-2M8.5 6.5l2-2M17.5 15.5l2-2"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="search" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="truck" xmlns="http://www.w3.org/2000/svg"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol><symbol viewBox="0 0 24 24" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.576-1.496c.588-.19 1.341 1.26 2.14 1.818.605.422 1.064.33 1.064.33l2.137-.03s1.117-.071.587-.964c-.043-.073-.308-.661-1.588-1.87-1.34-1.264-1.16-1.059.453-3.246.983-1.332 1.376-2.145 1.253-2.493-.117-.332-.84-.244-.84-.244l-2.406.015s-.178-.025-.31.056c-.13.079-.212.262-.212.262s-.382 1.03-.89 1.907c-1.07 1.85-1.499 1.948-1.674 1.832-.407-.267-.305-1.075-.305-1.649 0-1.793.267-2.54-.521-2.733-.262-.065-.454-.107-1.123-.114-.858-.009-1.585.003-1.996.208-.274.136-.485.44-.357.457.159.022.519.099.71.363.247.341.239 1.106.239 1.106s.142 2.107-.334 2.37c-.325.18-.77-.187-1.726-1.865-.489-.859-.859-1.81-.859-1.81s-.071-.176-.198-.272c-.154-.115-.37-.151-.37-.151l-2.286.015s-.343.01-.469.161c-.112.135-.009.413-.009.413s1.79 4.258 3.817 6.403c1.858 1.967 3.968 1.837 3.968 1.837z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="whatsapp" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol><symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="wrench" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol></svg>
+<script src="js/common.js?v=1787967914676"></script>
+</body>
+</html>

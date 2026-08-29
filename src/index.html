@@ -1,0 +1,44 @@
+@@include("_head.html", {"id":"pages"}) 
+@@include("_header.html") 
+
+<main class="pages">
+	<div class="container pages__inner">
+		<h1 class="pages__title">Страницы сайта</h1>
+
+		<div class="pages__list">
+			<a class="pages__item" href="main.html">
+				<span class="pages__item-text">
+					<span class="pages__item-name">Главная</span>
+					<span class="pages__item-desc">Лендинг со всеми секциями</span>
+				</span>
+				<svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+			</a>
+
+			<a class="pages__item" href="catalog.html">
+				<span class="pages__item-text">
+					<span class="pages__item-name">Каталог</span>
+					<span class="pages__item-desc">Каталог дверей с фильтрами</span>
+				</span>
+				<svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+			</a>
+
+			<a class="pages__item" href="cart.html">
+				<span class="pages__item-text">
+					<span class="pages__item-name">Корзина</span>
+					<span class="pages__item-desc">Изменение количества и удаление товаров</span>
+				</span>
+				<svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+			</a>
+
+			<a class="pages__item" href="checkout.html">
+				<span class="pages__item-text">
+					<span class="pages__item-name">Оформление заказа</span>
+					<span class="pages__item-desc">Форма заказа с оплатой</span>
+				</span>
+				<svg class="icon pages__item-arrow"><use href="#arrow-right"></use></svg>
+			</a>
+		</div>
+	</div>
+</main>
+
+@@include("_bottom.html")

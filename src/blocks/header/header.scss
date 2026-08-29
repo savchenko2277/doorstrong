@@ -1,0 +1,469 @@
+@use "../../scss/lib" as *;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background: var(--background);
+
+	// ===== Верхняя панель =====
+	&__top {
+		background: var(--text);
+
+		@include media('<lg') {
+			display: none;
+		}
+	}
+
+	&__top-inner {
+		min-height: 44px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px 18px;
+	}
+
+	&__top-nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 18px;
+	}
+
+	&__top-link {
+		color: var(--text-muted);
+		font-size: 13px;
+		line-height: 1.2;
+		transition: color 0.2s;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__top-info {
+		margin-left: auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 18px;
+	}
+
+	&__schedule {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__schedule-dot {
+		width: 8px;
+		height: 8px;
+		flex-shrink: 0;
+		border-radius: 50%;
+		background: var(--accent-2);
+		box-shadow: 0 0 0 4px rgba(166, 106, 63, 0.18);
+	}
+
+	&__schedule-text {
+		color: var(--text-muted);
+		font-size: 13px;
+		white-space: nowrap;
+	}
+
+	&__email {
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		transition: color 0.2s;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		padding-left: 14px;
+		border-left: 1px solid var(--border-strong);
+	}
+
+	&__social-link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 8px;
+		color: var(--text-muted);
+		transition: color 0.2s, background-color 0.2s;
+
+		.icon {
+			width: 18px;
+			height: 18px;
+		}
+
+		&:hover {
+			color: #fff;
+			background-color: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	&__cart-count {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		min-width: 16px;
+		height: 16px;
+		padding: 0 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--accent);
+		color: #fff;
+		font-size: 9.5px;
+		font-weight: 700;
+		line-height: 1;
+		border-radius: 8px;
+	}
+
+	// ===== Основная панель =====
+	&__main {
+		position: relative;
+		background: var(--background);
+		border-bottom: 1px solid var(--border);
+	}
+
+	&__main-inner {
+		min-height: 78px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+	}
+
+	&__logo {
+		display: inline-flex;
+		flex-shrink: 0;
+	}
+
+	&__logo-img {
+		display: block;
+		width: 114px;
+		height: 28px;
+	}
+
+	&__menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		padding: 8px 0;
+		background: var(--background);
+		border-bottom: 1px solid var(--border);
+		box-shadow: 0 24px 40px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-8px);
+		transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+
+		@include media('>=lg') {
+			position: static;
+			flex: 1 1 0;
+			flex-direction: row;
+			align-items: center;
+			gap: 2px;
+			padding: 0;
+			background: transparent;
+			border-bottom: none;
+			box-shadow: none;
+			opacity: 1;
+			visibility: visible;
+			transform: none;
+		}
+	}
+
+	&__menu-link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 6px;
+		padding: 14px fluid(24px, 16px);
+		color: var(--text);
+		font-family: inherit;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 18px;
+		text-align: left;
+		white-space: nowrap;
+		text-wrap: wrap;
+		transition: color 0.2s, background-color 0.2s;
+
+		.icon {
+			width: 12px;
+			height: 12px;
+		}
+
+		&:hover {
+			color: var(--accent);
+		}
+
+		@include media('>=lg') {
+			justify-content: center;
+			padding: 11px 13px;
+			border-radius: 8px;
+		}
+	}
+
+	&__menu-link_catalog {
+		@include media('>=lg') {
+			padding-left: 18px;
+			padding-right: 18px;
+			background: var(--accent);
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				background: #c8181d;
+			}
+		}
+	}
+
+	// Аккордеон «Каталог» (только мобильное меню)
+	&__catalog-list {
+		display: none;
+
+		@include media('<lg') {
+			display: block;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.3s ease;
+		}
+	}
+
+	&__catalog &__menu-link_catalog .icon {
+		transition: transform 0.25s ease;
+	}
+
+	&__catalog.opened &__catalog-list {
+		@include media('<lg') {
+			max-height: 600px;
+		}
+	}
+
+	&__catalog.opened &__menu-link_catalog .icon {
+		transform: rotate(180deg);
+	}
+
+	&__catalog-item {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 10px fluid(24px, 16px);
+		color: var(--text);
+		font-size: 15px;
+		font-weight: 500;
+		transition: color 0.2s;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&__catalog-thumb {
+		display: block;
+		width: 40px;
+		height: 40px;
+		flex-shrink: 0;
+		border-radius: 8px;
+		background: var(--placeholder);
+	}
+
+	&__catalog-name {
+		line-height: 1.2;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__phone {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding: 6px 14px 6px 6px;
+		background: var(--surface);
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		transition: background-color 0.2s, border-color 0.2s;
+
+		&:hover {
+			border-color: var(--accent);
+		}
+
+		@include media('<sm') {
+			padding: 6px;
+		}
+	}
+
+	&__phone-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+		border-radius: 8px;
+		background: var(--accent);
+		color: #fff;
+
+		.icon {
+			width: 17px;
+			height: 17px;
+		}
+	}
+
+	&__phone-body {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+
+		@include media('<sm') {
+			display: none;
+		}
+	}
+
+	&__phone-number {
+		color: var(--text);
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 1.1;
+		white-space: nowrap;
+	}
+
+	&__phone-note {
+		color: var(--accent-2);
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.44px;
+		line-height: 1.1;
+		white-space: nowrap;
+	}
+
+	&__burger {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+		border-radius: 8px;
+		background: var(--surface);
+		border: 1px solid var(--border);
+
+		@include media('>=lg') {
+			display: none;
+		}
+	}
+
+	&__burger-line {
+		display: block;
+		width: 18px;
+		height: 1.5px;
+		background: var(--text);
+		transition: transform 0.25s ease, opacity 0.25s ease;
+	}
+
+	// Перенесённые из верхней панели элементы внутри мобильного меню
+	&__menu .header__top-nav {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+	}
+
+	&__menu .header__top-link {
+		display: block;
+		padding: 12px fluid(24px, 16px);
+		color: var(--text);
+		font-size: 15px;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&__menu .header__top-info {
+		margin-left: 0;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+		padding: 16px fluid(24px, 16px);
+		border-top: 1px solid var(--border);
+	}
+
+	&__menu .header__schedule-text {
+		color: var(--text);
+	}
+
+	&__menu .header__email {
+		color: var(--text);
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+	&__menu .header__social {
+		border-left: none;
+		padding-left: 0;
+	}
+
+	&__menu .header__social-link {
+		color: var(--text);
+
+		&:hover {
+			color: var(--accent);
+			background: var(--surface);
+		}
+	}
+
+	// Состояние открытого мобильного меню
+	&.opened &__menu {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+
+	&.opened &__burger-line:nth-child(1) {
+		transform: translateY(5.5px) rotate(45deg);
+	}
+
+	&.opened &__burger-line:nth-child(2) {
+		opacity: 0;
+	}
+
+	&.opened &__burger-line:nth-child(3) {
+		transform: translateY(-5.5px) rotate(-45deg);
+	}
+}
+

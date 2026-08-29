@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-arrow-right-dims { width: 24px; height: 24px; }
+ .svg-calc-dims { width: 24px; height: 24px; }
+ .svg-cart-dims { width: 24px; height: 24px; }
+ .svg-chat-dims { width: 24px; height: 24px; }
+ .svg-check-dims { width: 24px; height: 24px; }
+ .svg-chevron-dims { width: 24px; height: 24px; }
+ .svg-close-dims { width: 24px; height: 24px; }
+ .svg-factory-dims { width: 24px; height: 24px; }
+ .svg-filter-dims { width: 24px; height: 24px; }
+ .svg-grid-dims { width: 24px; height: 24px; }
+ .svg-phone-dims { width: 24px; height: 24px; }
+ .svg-ruler-dims { width: 24px; height: 24px; }
+ .svg-search-dims { width: 24px; height: 24px; }
+ .svg-shield-dims { width: 24px; height: 24px; }
+ .svg-telegram-dims { width: 24px; height: 24px; }
+ .svg-truck-dims { width: 24px; height: 24px; }
+ .svg-vk-dims { width: 24px; height: 24px; }
+ .svg-whatsapp-dims { width: 24px; height: 24px; }
+ .svg-wrench-dims { width: 24px; height: 24px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+
+<!--
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+    https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+-->
+
+<svg width="0" height="0" style="position:absolute">
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="calc" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M16 14v4M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="cart" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="chat" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="check" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 9 17l-5-5"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="chevron" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="factory" xmlns="http://www.w3.org/2000/svg"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2ZM17 18h1M12 18h1M7 18h1"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="filter" xmlns="http://www.w3.org/2000/svg"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="grid" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="ruler" xmlns="http://www.w3.org/2000/svg"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0zM14.5 12.5l2-2M11.5 9.5l2-2M8.5 6.5l2-2M17.5 15.5l2-2"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="search" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="shield" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="truck" xmlns="http://www.w3.org/2000/svg"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+     <symbol viewBox="0 0 24 24" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.576-1.496c.588-.19 1.341 1.26 2.14 1.818.605.422 1.064.33 1.064.33l2.137-.03s1.117-.071.587-.964c-.043-.073-.308-.661-1.588-1.87-1.34-1.264-1.16-1.059.453-3.246.983-1.332 1.376-2.145 1.253-2.493-.117-.332-.84-.244-.84-.244l-2.406.015s-.178-.025-.31.056c-.13.079-.212.262-.212.262s-.382 1.03-.89 1.907c-1.07 1.85-1.499 1.948-1.674 1.832-.407-.267-.305-1.075-.305-1.649 0-1.793.267-2.54-.521-2.733-.262-.065-.454-.107-1.123-.114-.858-.009-1.585.003-1.996.208-.274.136-.485.44-.357.457.159.022.519.099.71.363.247.341.239 1.106.239 1.106s.142 2.107-.334 2.37c-.325.18-.77-.187-1.726-1.865-.489-.859-.859-1.81-.859-1.81s-.071-.176-.198-.272c-.154-.115-.37-.151-.37-.151l-2.286.015s-.343.01-.469.161c-.112.135-.009.413-.009.413s1.79 4.258 3.817 6.403c1.858 1.967 3.968 1.837 3.968 1.837z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="whatsapp" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+     <symbol viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="wrench" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+        <header>
+            <h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+            <p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+                <li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+-->
+
+            <h3>A) Inline SVG with embedded sprite</h3>
+            <ul>
+
+             <li title="arrow-right">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-right-dims">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-right, </h2>
+                </li>
+             <li title="calc">
+                    <div class="icon-box">
+                        <svg class="svg-calc-dims">
+                            <use xlink:href="#calc"></use>
+                        </svg>
+                    </div>
+                    <h2>calc, </h2>
+                </li>
+             <li title="cart">
+                    <div class="icon-box">
+                        <svg class="svg-cart-dims">
+                            <use xlink:href="#cart"></use>
+                        </svg>
+                    </div>
+                    <h2>cart, </h2>
+                </li>
+             <li title="chat">
+                    <div class="icon-box">
+                        <svg class="svg-chat-dims">
+                            <use xlink:href="#chat"></use>
+                        </svg>
+                    </div>
+                    <h2>chat, </h2>
+                </li>
+             <li title="check">
+                    <div class="icon-box">
+                        <svg class="svg-check-dims">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </div>
+                    <h2>check, </h2>
+                </li>
+             <li title="chevron">
+                    <div class="icon-box">
+                        <svg class="svg-chevron-dims">
+                            <use xlink:href="#chevron"></use>
+                        </svg>
+                    </div>
+                    <h2>chevron, </h2>
+                </li>
+             <li title="close">
+                    <div class="icon-box">
+                        <svg class="svg-close-dims">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <h2>close, </h2>
+                </li>
+             <li title="factory">
+                    <div class="icon-box">
+                        <svg class="svg-factory-dims">
+                            <use xlink:href="#factory"></use>
+                        </svg>
+                    </div>
+                    <h2>factory, </h2>
+                </li>
+             <li title="filter">
+                    <div class="icon-box">
+                        <svg class="svg-filter-dims">
+                            <use xlink:href="#filter"></use>
+                        </svg>
+                    </div>
+                    <h2>filter, </h2>
+                </li>
+             <li title="grid">
+                    <div class="icon-box">
+                        <svg class="svg-grid-dims">
+                            <use xlink:href="#grid"></use>
+                        </svg>
+                    </div>
+                    <h2>grid, </h2>
+                </li>
+             <li title="phone">
+                    <div class="icon-box">
+                        <svg class="svg-phone-dims">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                    </div>
+                    <h2>phone, </h2>
+                </li>
+             <li title="ruler">
+                    <div class="icon-box">
+                        <svg class="svg-ruler-dims">
+                            <use xlink:href="#ruler"></use>
+                        </svg>
+                    </div>
+                    <h2>ruler, </h2>
+                </li>
+             <li title="search">
+                    <div class="icon-box">
+                        <svg class="svg-search-dims">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </div>
+                    <h2>search, </h2>
+                </li>
+             <li title="shield">
+                    <div class="icon-box">
+                        <svg class="svg-shield-dims">
+                            <use xlink:href="#shield"></use>
+                        </svg>
+                    </div>
+                    <h2>shield, </h2>
+                </li>
+             <li title="telegram">
+                    <div class="icon-box">
+                        <svg class="svg-telegram-dims">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </div>
+                    <h2>telegram, </h2>
+                </li>
+             <li title="truck">
+                    <div class="icon-box">
+                        <svg class="svg-truck-dims">
+                            <use xlink:href="#truck"></use>
+                        </svg>
+                    </div>
+                    <h2>truck, </h2>
+                </li>
+             <li title="vk">
+                    <div class="icon-box">
+                        <svg class="svg-vk-dims">
+                            <use xlink:href="#vk"></use>
+                        </svg>
+                    </div>
+                    <h2>vk, </h2>
+                </li>
+             <li title="whatsapp">
+                    <div class="icon-box">
+                        <svg class="svg-whatsapp-dims">
+                            <use xlink:href="#whatsapp"></use>
+                        </svg>
+                    </div>
+                    <h2>whatsapp, </h2>
+                </li>
+             <li title="wrench">
+                    <div class="icon-box">
+                        <svg class="svg-wrench-dims">
+                            <use xlink:href="#wrench"></use>
+                        </svg>
+                    </div>
+                    <h2>wrench, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <section>
+
+<!--
+B) Inline SVG with external sprite
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS.
+-->
+
+            <h3>B) Inline SVG with external sprite</h3>
+            <ul>
+
+             <li title="arrow-right">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-right-dims">
+                            <use xlink:href="_sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-right</h2>
+                </li>
+             <li title="calc">
+                    <div class="icon-box">
+                        <svg class="svg-calc-dims">
+                            <use xlink:href="_sprite.svg#calc"></use>
+                        </svg>
+                    </div>
+                    <h2>calc</h2>
+                </li>
+             <li title="cart">
+                    <div class="icon-box">
+                        <svg class="svg-cart-dims">
+                            <use xlink:href="_sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                    <h2>cart</h2>
+                </li>
+             <li title="chat">
+                    <div class="icon-box">
+                        <svg class="svg-chat-dims">
+                            <use xlink:href="_sprite.svg#chat"></use>
+                        </svg>
+                    </div>
+                    <h2>chat</h2>
+                </li>
+             <li title="check">
+                    <div class="icon-box">
+                        <svg class="svg-check-dims">
+                            <use xlink:href="_sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <h2>check</h2>
+                </li>
+             <li title="chevron">
+                    <div class="icon-box">
+                        <svg class="svg-chevron-dims">
+                            <use xlink:href="_sprite.svg#chevron"></use>
+                        </svg>
+                    </div>
+                    <h2>chevron</h2>
+                </li>
+             <li title="close">
+                    <div class="icon-box">
+                        <svg class="svg-close-dims">
+                            <use xlink:href="_sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                    <h2>close</h2>
+                </li>
+             <li title="factory">
+                    <div class="icon-box">
+                        <svg class="svg-factory-dims">
+                            <use xlink:href="_sprite.svg#factory"></use>
+                        </svg>
+                    </div>
+                    <h2>factory</h2>
+                </li>
+             <li title="filter">
+                    <div class="icon-box">
+                        <svg class="svg-filter-dims">
+                            <use xlink:href="_sprite.svg#filter"></use>
+                        </svg>
+                    </div>
+                    <h2>filter</h2>
+                </li>
+             <li title="grid">
+                    <div class="icon-box">
+                        <svg class="svg-grid-dims">
+                            <use xlink:href="_sprite.svg#grid"></use>
+                        </svg>
+                    </div>
+                    <h2>grid</h2>
+                </li>
+             <li title="phone">
+                    <div class="icon-box">
+                        <svg class="svg-phone-dims">
+                            <use xlink:href="_sprite.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <h2>phone</h2>
+                </li>
+             <li title="ruler">
+                    <div class="icon-box">
+                        <svg class="svg-ruler-dims">
+                            <use xlink:href="_sprite.svg#ruler"></use>
+                        </svg>
+                    </div>
+                    <h2>ruler</h2>
+                </li>
+             <li title="search">
+                    <div class="icon-box">
+                        <svg class="svg-search-dims">
+                            <use xlink:href="_sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                    <h2>search</h2>
+                </li>
+             <li title="shield">
+                    <div class="icon-box">
+                        <svg class="svg-shield-dims">
+                            <use xlink:href="_sprite.svg#shield"></use>
+                        </svg>
+                    </div>
+                    <h2>shield</h2>
+                </li>
+             <li title="telegram">
+                    <div class="icon-box">
+                        <svg class="svg-telegram-dims">
+                            <use xlink:href="_sprite.svg#telegram"></use>
+                        </svg>
+                    </div>
+                    <h2>telegram</h2>
+                </li>
+             <li title="truck">
+                    <div class="icon-box">
+                        <svg class="svg-truck-dims">
+                            <use xlink:href="_sprite.svg#truck"></use>
+                        </svg>
+                    </div>
+                    <h2>truck</h2>
+                </li>
+             <li title="vk">
+                    <div class="icon-box">
+                        <svg class="svg-vk-dims">
+                            <use xlink:href="_sprite.svg#vk"></use>
+                        </svg>
+                    </div>
+                    <h2>vk</h2>
+                </li>
+             <li title="whatsapp">
+                    <div class="icon-box">
+                        <svg class="svg-whatsapp-dims">
+                            <use xlink:href="_sprite.svg#whatsapp"></use>
+                        </svg>
+                    </div>
+                    <h2>whatsapp</h2>
+                </li>
+             <li title="wrench">
+                    <div class="icon-box">
+                        <svg class="svg-wrench-dims">
+                            <use xlink:href="_sprite.svg#wrench"></use>
+                        </svg>
+                    </div>
+                    <h2>wrench</h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Sat, 29 Aug 2026 01:15:51 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

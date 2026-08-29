@@ -1,0 +1,141 @@
+@use "../../scss/lib" as *;
+
+.partners {
+	background: var(--background);
+	padding-top: fluid(80px, 48px);
+	padding-bottom: fluid(80px, 48px);
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(48px, 32px);
+	}
+
+	&__head {
+		max-width: 760px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: var(--accent-4);
+		font-size: 13px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 2.34px;
+	}
+
+	&__label-line {
+		width: 28px;
+		height: 1px;
+		background: var(--accent-4);
+	}
+
+	&__title {
+		color: var(--text);
+		font-size: fluid-rem(46, 28);
+		font-weight: 600;
+		line-height: 1.15;
+	}
+
+	&__subtitle {
+		max-width: 620px;
+		color: var(--text-gray);
+		font-size: 17px;
+		line-height: 1.55;
+	}
+
+	// Лого-карусель
+	&__slider {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		overflow: hidden;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 130px;
+		background: var(--background);
+		border: 1px solid var(--border);
+		border-radius: 14px;
+	}
+
+	&__logo-img {
+		display: block;
+		width: 109px;
+		height: 84px;
+		background: var(--placeholder);
+	}
+
+	// Нижняя панель
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	&__footer-info {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__bar {
+		width: 26px;
+		height: 8px;
+		flex-shrink: 0;
+		border-radius: 4px;
+		background: var(--accent-4);
+	}
+
+	&__note {
+		color: var(--text-gray);
+		font-size: 13px;
+		letter-spacing: 0.52px;
+	}
+
+	&__nav {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: var(--background);
+		border: 1px solid #D9C9AA;
+		color: var(--accent-4);
+		transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+		.icon {
+			width: 18px;
+			height: 18px;
+		}
+
+		&_prev .icon {
+			transform: rotate(90deg);
+		}
+
+		&_next .icon {
+			transform: rotate(-90deg);
+		}
+
+		&:hover {
+			background: var(--accent-4);
+			border-color: var(--accent-4);
+			color: #fff;
+		}
+	}
+}

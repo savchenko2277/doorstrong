@@ -1,0 +1,305 @@
+@@include("_head.html", {"id":"catalog"}) 
+@@include("_header.html") 
+
+<main class="catalog-page">
+	<div class="container catalog-page__inner">
+		<h1 class="catalog-page__title">Каталог дверей</h1>
+
+		<div class="catalog-page__layout">
+			<aside class="catalog-page__filters">
+				<div class="catalog-page__filters-head">
+					<div class="catalog-page__filter-title">Фильтры</div>
+					<button class="catalog-page__filters-close" type="button" aria-label="Закрыть">
+						<svg class="icon"><use href="#close"></use></svg>
+					</button>
+				</div>
+
+				<div class="catalog-page__filter">
+					<div class="catalog-page__filter-title">Категория</div>
+					<div class="catalog-page__filter-options">
+						<label class="catalog-page__radio">
+							<input class="catalog-page__radio-input" type="radio" name="category" value="all" checked>
+							<span>Все</span>
+						</label>
+						<label class="catalog-page__radio">
+							<input class="catalog-page__radio-input" type="radio" name="category" value="entrance">
+							<span>Входные двери</span>
+						</label>
+						<label class="catalog-page__radio">
+							<input class="catalog-page__radio-input" type="radio" name="category" value="interior">
+							<span>Межкомнатные</span>
+						</label>
+						<label class="catalog-page__radio">
+							<input class="catalog-page__radio-input" type="radio" name="category" value="street">
+							<span>Уличные</span>
+						</label>
+						<label class="catalog-page__radio">
+							<input class="catalog-page__radio-input" type="radio" name="category" value="thermo">
+							<span>С терморазрывом</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="catalog-page__filter">
+					<div class="catalog-page__filter-title">Бренд</div>
+					<div class="catalog-page__filter-options">
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="gardian">
+							<span>Гардиан</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="elbor">
+							<span>Эльбор</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="torex">
+							<span>Torex</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="dveripro">
+							<span>ДвериПро</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="ferroni">
+							<span>Феррони</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="brand" value="zetta">
+							<span>Зетта</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="catalog-page__filter">
+					<div class="catalog-page__filter-title">Наличие</div>
+					<div class="catalog-page__filter-options">
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="availability" value="stock">
+							<span>В наличии</span>
+						</label>
+						<label class="catalog-page__check">
+							<input class="catalog-page__check-input" type="checkbox" name="availability" value="order">
+							<span>Под заказ</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="catalog-page__filter">
+					<div class="catalog-page__filter-title">Цена</div>
+					<div class="catalog-page__price" data-range-start-min="0" data-range-start-max="100000" data-range-max="100000" data-range-step="1000" data-range-gap="1000">
+						<input type="range">
+						<input type="range">
+					</div>
+				</div>
+			</aside>
+
+			<div class="catalog-page__main">
+				<div class="catalog-page__toolbar">
+					<span class="catalog-page__count">Найдено: 12</span>
+					<button class="catalog-page__filters-toggle" type="button">
+						<svg class="icon"><use href="#filter"></use></svg>
+						Фильтры
+					</button>
+				</div>
+
+				<div class="catalog-page__grid">
+					<article class="products__card" data-category="entrance" data-brand="gardian" data-availability="stock" data-price="28900">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Гардиан</div>
+							<h3 class="products__name">Дверь «Гранит»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">28 900</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="entrance" data-brand="elbor" data-availability="stock" data-price="42500">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Эльбор</div>
+							<h3 class="products__name">Дверь «Премиум Люкс»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">42 500</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="thermo" data-brand="torex" data-availability="order" data-price="56800">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Torex</div>
+							<h3 class="products__name">Дверь «Термо»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">56 800</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="entrance" data-brand="torex" data-availability="stock" data-price="19400">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Torex</div>
+							<h3 class="products__name">Дверь «Стандарт»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">19 400</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="interior" data-brand="dveripro" data-availability="stock" data-price="32700">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">ДвериПро</div>
+							<h3 class="products__name">Дверь «Лофт»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">32 700</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="entrance" data-brand="ferroni" data-availability="order" data-price="64200">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Феррони</div>
+							<h3 class="products__name">Дверь «Скандия»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">64 200</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="interior" data-brand="zetta" data-availability="stock" data-price="26900">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Зетта</div>
+							<h3 class="products__name">Дверь «Классика»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">26 900</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="entrance" data-brand="elbor" data-availability="order" data-price="42500">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Эльбор</div>
+							<h3 class="products__name">Дверь «Премиум Люкс»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">42 500</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="interior" data-brand="gardian" data-availability="stock" data-price="18900">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Гардиан</div>
+							<h3 class="products__name">Дверь «Оптима»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">18 900</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="thermo" data-brand="ferroni" data-availability="order" data-price="52900">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Феррони</div>
+							<h3 class="products__name">Дверь «Термо Плюс»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">52 900</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="interior" data-brand="zetta" data-availability="stock" data-price="24800">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">Зетта</div>
+							<h3 class="products__name">Дверь «Скандинавия»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">24 800</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+
+					<article class="products__card" data-category="street" data-brand="dveripro" data-availability="order" data-price="45800">
+						<div class="products__img" aria-hidden="true"></div>
+						<div class="products__body">
+							<div class="products__brand">ДвериПро</div>
+							<h3 class="products__name">Дверь «Уличный»</h3>
+							<div class="products__meta">
+								<div class="products__price"><span class="products__price-value">45 800</span><span class="products__price-currency">₽</span></div>
+								<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+							</div>
+							<div class="products__actions">
+								<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+								<button class="products__btn" type="button">В корзину</button>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="catalog-page__empty">По выбранным фильтрам ничего не найдено</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+@@include("_bottom.html")

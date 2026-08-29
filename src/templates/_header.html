@@ -1,0 +1,138 @@
+<header class="header">
+	<div class="header__top">
+		<div class="container header__top-inner">
+			<nav class="header__top-nav" aria-label="Вспомогательная навигация" data-moved=".header__menu, lg, last">
+				<a class="header__top-link" href="#">О компании</a>
+				<a class="header__top-link" href="#">Оплата и доставка</a>
+				<a class="header__top-link" href="#">Гарантия</a>
+				<a class="header__top-link" href="#">Контакты</a>
+			</nav>
+
+			<div class="header__top-info" data-moved=".header__menu, lg, last">
+				<div class="header__schedule">
+					<span class="header__schedule-dot"></span>
+					<span class="header__schedule-text">ПН–ВС: 8:00 – 22:00</span>
+				</div>
+
+				<a class="header__email" href="mailto:info@door-strong.ru">info@door-strong.ru</a>
+
+				<div class="header__social">
+					<a class="header__social-link" href="#" aria-label="Поиск">
+						<svg class="icon"><use href="#search"></use></svg>
+					</a>
+					<a class="header__social-link" href="cart.html" aria-label="Корзина">
+						<svg class="icon"><use href="#cart"></use></svg>
+						<span class="header__cart-count">0</span>
+					</a>
+					<a class="header__social-link" href="#" aria-label="WhatsApp">
+						<svg class="icon"><use href="#whatsapp"></use></svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__main">
+		<div class="container header__main-inner">
+			<a class="header__logo" href="main.html" aria-label="Door Strong">
+				<img class="header__logo-img" src="img/logo.webp" alt="Door Strong" width="114" height="28">
+			</a>
+
+			<nav class="header__menu" aria-label="Основная навигация">
+				<div class="header__catalog">
+					<button class="header__menu-link header__menu-link_catalog" type="button" aria-expanded="false" aria-controls="catalog-list">
+						<span>Каталог</span>
+						<svg class="icon"><use href="#chevron"></use></svg>
+					</button>
+					<div class="header__catalog-list" id="catalog-list">
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Входные двери</span>
+						</a>
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Межкомнатные двери</span>
+						</a>
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Двери со стеклом</span>
+						</a>
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Фурнитура</span>
+						</a>
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Двери с установкой</span>
+						</a>
+						<a class="header__catalog-item" href="#">
+							<span class="header__catalog-thumb" aria-hidden="true"></span>
+							<span class="header__catalog-name">Акции и скидки</span>
+						</a>
+					</div>
+				</div>
+
+				<a class="header__menu-link" href="#">Входные двери</a>
+				<a class="header__menu-link" href="#">Межкомнатные двери</a>
+				<a class="header__menu-link" href="#">Производители</a>
+				<a class="header__menu-link" href="#">Двери с установкой</a>
+			</nav>
+
+			<div class="header__actions">
+				<a class="header__phone" href="tel:+79957814960">
+					<span class="header__phone-icon">
+						<svg class="icon"><use href="#phone"></use></svg>
+					</span>
+					<span class="header__phone-body">
+						<span class="header__phone-number">+7 995-781-49-60</span>
+						<span class="header__phone-note">Звонок бесплатный</span>
+					</span>
+				</a>
+
+				<button class="header__burger" type="button" aria-label="Меню" aria-expanded="false">
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+					<span class="header__burger-line"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="catalog" aria-hidden="true">
+	<div class="catalog__overlay" data-catalog-close></div>
+	<div class="catalog__panel" role="dialog" aria-modal="true" aria-label="Каталог">
+		<div class="catalog__head">
+			<div class="catalog__title">Каталог</div>
+			<button class="catalog__close" type="button" aria-label="Закрыть" data-catalog-close>
+				<svg class="icon"><use href="#close"></use></svg>
+			</button>
+		</div>
+		<div class="catalog__grid">
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Входные двери</span>
+			</a>
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Межкомнатные двери</span>
+			</a>
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Двери со стеклом</span>
+			</a>
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Фурнитура</span>
+			</a>
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Двери с установкой</span>
+			</a>
+			<a class="catalog__item" href="#">
+				<span class="catalog__thumb" aria-hidden="true"></span>
+				<span class="catalog__name">Акции и скидки</span>
+			</a>
+		</div>
+	</div>
+</div>

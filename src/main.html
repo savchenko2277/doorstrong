@@ -1,0 +1,529 @@
+@@include("_head.html", {"id":"main"}) 
+@@include("_header.html") 
+
+<section class="hero">
+	<div class="hero__slider swiper">
+		<div class="swiper-wrapper">
+			<div class="hero__slide swiper-slide">
+				<img class="hero__slide-bg" src="img/hero/1.webp" alt="">
+				<div class="hero__slide-overlay" aria-hidden="true"></div>
+				<div class="hero__content">
+					<div class="hero__body">
+						<div class="hero__badge">
+							<span class="hero__badge-dot"></span>
+							<span class="hero__badge-text">Входные двери от проверенных производителей</span>
+						</div>
+						<h1 class="hero__title">Надёжные двери<br>для квартиры и частного дома</h1>
+						<p class="hero__text">Более 500 моделей в наличии и под заказ. Поможем подобрать дверь по размеру, назначению, дизайну и бюджету. Доставим и установим в Москве и Московской области.</p>
+						<div class="hero__actions">
+							<a class="hero__btn hero__btn_primary" href="#">Перейти в каталог</a>
+							<a class="hero__btn hero__btn_secondary" href="#" data-callback-open>Получить консультацию</a>
+						</div>
+						<ul class="hero__benefits">
+							<li class="hero__benefit">Гарантия до 5 лет</li>
+							<li class="hero__benefit">Профессиональный монтаж</li>
+							<li class="hero__benefit">Замер перед заказом</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Слайд 2 (заглушка — замените контент и картинку) -->
+			<div class="hero__slide swiper-slide">
+				<img class="hero__slide-bg" src="img/hero/1.webp" alt="">
+				<div class="hero__slide-overlay" aria-hidden="true"></div>
+				<div class="hero__content">
+					<div class="hero__body">
+						<div class="hero__badge">
+							<span class="hero__badge-dot"></span>
+							<span class="hero__badge-text">Межкомнатные двери на любой вкус</span>
+						</div>
+						<h1 class="hero__title">Стиль и уют<br>в каждом интерьере</h1>
+						<p class="hero__text">Широкий выбор межкомнатных дверей: от классики до модерна. Бесплатный замер и доставка по Москве и Московской области.</p>
+						<div class="hero__actions">
+							<a class="hero__btn hero__btn_primary" href="#">Перейти в каталог</a>
+							<a class="hero__btn hero__btn_secondary" href="#" data-callback-open>Получить консультацию</a>
+						</div>
+						<ul class="hero__benefits">
+							<li class="hero__benefit">Гарантия до 5 лет</li>
+							<li class="hero__benefit">Профессиональный монтаж</li>
+							<li class="hero__benefit">Замер перед заказом</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="hero__arrow hero__arrow_prev" type="button" aria-label="Предыдущий слайд">
+			<svg class="icon"><use href="#chevron"></use></svg>
+		</button>
+		<button class="hero__arrow hero__arrow_next" type="button" aria-label="Следующий слайд">
+			<svg class="icon"><use href="#chevron"></use></svg>
+		</button>
+		<div class="hero__pagination"></div>
+		<div class="hero__progress" aria-hidden="true">
+			<span class="hero__progress-fill"></span>
+		</div>
+	</div>
+</section>
+
+<section class="categories">
+	<div class="container container--md categories__inner">
+		<div class="categories__head">
+			<h2 class="categories__title">Какая дверь вам нужна?</h2>
+			<p class="categories__subtitle">Выберите назначение — покажем подходящие модели с нужными характеристиками.</p>
+		</div>
+
+		<div class="categories__grid">
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">Для квартиры</div>
+					<div class="categories__text">Надёжные входные двери с шумоизоляцией и защитой от взлома.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">Для частного дома</div>
+					<div class="categories__text">Уличные модели, рассчитанные на перепады температуры и влажность.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">С терморазрывом</div>
+					<div class="categories__text">Для неотапливаемого тамбура, загородного дома и прямого выхода на улицу.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">Со стеклом и ковкой</div>
+					<div class="categories__text">Декоративные входные двери для частных домов и коттеджей.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">С зеркалом</div>
+					<div class="categories__text">Практичное решение для прихожей без необходимости устанавливать отдельное зеркало.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+
+			<a class="categories__card" href="#">
+				<div class="categories__img" aria-hidden="true"></div>
+				<div class="categories__body">
+					<div class="categories__name">Межкомнатные двери</div>
+					<div class="categories__text">Модели для квартиры, дома, офиса и коммерческих помещений.</div>
+					<div class="categories__link">Смотреть модели <svg class="icon"><use href="#arrow-right"></use></svg></div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="products">
+	<div class="container container--md products__inner">
+		<div class="products__head">
+			<h2 class="products__title">Популярные входные двери</h2>
+			<p class="products__subtitle">Модели, которые чаще всего выбирают для квартир и частных домов.</p>
+		</div>
+
+		<div class="products__grid">
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Гардиан</div>
+					<h3 class="products__name">Дверь «Гранит»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">28 900</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Эльбор</div>
+					<h3 class="products__name">Дверь «Премиум Люкс»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">42 500</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Torex</div>
+					<h3 class="products__name">Дверь «Термо»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">56 800</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Torex</div>
+					<h3 class="products__name">Дверь «Стандарт»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">19 400</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">ДвериПро</div>
+					<h3 class="products__name">Дверь «Лофт»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">32 700</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Феррони</div>
+					<h3 class="products__name">Дверь «Скандия»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">64 200</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Зетта</div>
+					<h3 class="products__name">Дверь «Классика»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">26 900</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+
+			<article class="products__card">
+				<div class="products__img" aria-hidden="true"></div>
+				<div class="products__body">
+					<div class="products__brand">Эльбор</div>
+					<h3 class="products__name">Дверь «Премиум Люкс»</h3>
+					<div class="products__meta">
+						<div class="products__price"><span class="products__price-value">42 500</span><span class="products__price-currency">₽</span></div>
+						<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+					</div>
+					<div class="products__actions">
+						<a class="products__btn products__btn_outline" href="#">Подробнее</a>
+						<button class="products__btn" type="button">В корзину</button>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<a class="products__more" href="#">
+			Смотреть все двери
+			<svg class="icon"><use href="#arrow-right"></use></svg>
+		</a>
+	</div>
+</section>
+
+<section class="install">
+	<div class="container install__inner">
+		<div class="install__media">
+			<div class="install__media-img" aria-hidden="true"></div>
+			<div class="install__media-overlay" aria-hidden="true"></div>
+			<div class="install__media-corner" aria-hidden="true"></div>
+			<div class="install__media-caption">Бригада монтажников · опыт<br>от 8 лет</div>
+			<div class="install__media-badge">Москва и область</div>
+		</div>
+
+		<div class="install__content">
+			<div class="install__label">Двери под ключ</div>
+			<h2 class="install__title">Не только продаём —<br><span class="install__highlight">устанавливаем</span> двери под ключ</h2>
+			<p class="install__text">Выполним замер проёма, подберём подходящую модель, доставим дверь, аккуратно демонтируем старую конструкцию и произведём монтаж. После установки проверим работу замков, прижим полотна и качество отделки.</p>
+
+			<ol class="install__steps">
+				<li class="install__step">
+					<span class="install__step-num">01</span>
+					<svg class="icon install__step-icon"><use href="#chat"></use></svg>
+					<div class="install__step-body">
+						<h3 class="install__step-title">Консультация</h3>
+						<p class="install__step-text">Уточняем тип объекта, размеры проёма и требования к двери.</p>
+					</div>
+				</li>
+				<li class="install__step">
+					<span class="install__step-num">02</span>
+					<svg class="icon install__step-icon"><use href="#ruler"></use></svg>
+					<div class="install__step-body">
+						<h3 class="install__step-title">Замер</h3>
+						<p class="install__step-text">Специалист проверяет размеры, стены и особенности будущего монтажа.</p>
+					</div>
+				</li>
+				<li class="install__step">
+					<span class="install__step-num">03</span>
+					<svg class="icon install__step-icon"><use href="#calc"></use></svg>
+					<div class="install__step-body">
+						<h3 class="install__step-title">Расчёт</h3>
+						<p class="install__step-text">Фиксируем комплектацию двери и стоимость дополнительных работ.</p>
+					</div>
+				</li>
+				<li class="install__step">
+					<span class="install__step-num">04</span>
+					<svg class="icon install__step-icon"><use href="#truck"></use></svg>
+					<div class="install__step-body">
+						<h3 class="install__step-title">Доставка и установка</h3>
+						<p class="install__step-text">Привозим дверь в согласованное время и выполняем монтаж.</p>
+					</div>
+				</li>
+			</ol>
+
+			<div class="install__bottom">
+				<a class="install__cta" href="#" data-callback-open>
+					Рассчитать дверь с установкой
+					<svg class="icon"><use href="#arrow-right"></use></svg>
+				</a>
+				<div class="install__note">Выезд замерщика — бесплатно.<br>Расчёт в течение часа после замера.</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="advantages">
+	<div class="container advantages__inner">
+		<div class="advantages__head">
+			<div class="advantages__badge">
+				<span class="advantages__badge-dot"></span>
+				Преимущества DoorStrong
+			</div>
+			<h2 class="advantages__title">Почему двери<br><span class="advantages__title-accent">заказывают</span> у нас</h2>
+			<p class="advantages__subtitle">Шесть причин, по которым клиенты возвращаются за второй дверью и рекомендуют нас соседям.</p>
+		</div>
+
+		<div class="advantages__grid">
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">01</span>
+					<svg class="icon advantages__icon"><use href="#factory"></use></svg>
+				</div>
+				<h3 class="advantages__name">Проверенные производители</h3>
+				<p class="advantages__text">Работаем с российскими и белорусскими фабриками, выпускающими двери для квартир, частных домов и коммерческих объектов. Помогаем сравнить модели разных брендов без привязки к одному производителю.</p>
+			</div>
+
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">02</span>
+					<svg class="icon advantages__icon"><use href="#grid"></use></svg>
+				</div>
+				<h3 class="advantages__name">Большой выбор моделей</h3>
+				<p class="advantages__text">В каталоге представлены двери разных размеров, цветов, вариантов внутренней отделки и классов защиты. Можно подобрать готовую модель или заказать дверь с необходимыми параметрами.</p>
+			</div>
+
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">03</span>
+					<svg class="icon advantages__icon"><use href="#wrench"></use></svg>
+				</div>
+				<h3 class="advantages__name">Профессиональный монтаж</h3>
+				<p class="advantages__text">Установкой занимаются специалисты, знакомые с конструкцией дверей разных производителей. Учитываем материал стен, состояние проёма и требования к эксплуатации.</p>
+			</div>
+
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">04</span>
+					<svg class="icon advantages__icon"><use href="#shield"></use></svg>
+				</div>
+				<h3 class="advantages__name">Гарантия до 5 лет</h3>
+				<p class="advantages__text">На двери действует гарантия производителя, на монтажные работы — отдельная гарантия. Условия и срок гарантии указываются в документах на заказ.</p>
+			</div>
+
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">05</span>
+					<svg class="icon advantages__icon"><use href="#calc"></use></svg>
+				</div>
+				<h3 class="advantages__name">Честный предварительный расчёт</h3>
+				<p class="advantages__text">До оформления заказа рассчитываем стоимость двери, доставки, демонтажа, монтажа и дополнительных работ. Клиент заранее понимает итоговый бюджет.</p>
+			</div>
+
+			<div class="advantages__card">
+				<div class="advantages__card-head">
+					<span class="advantages__num">06</span>
+					<svg class="icon advantages__icon"><use href="#truck"></use></svg>
+				</div>
+				<h3 class="advantages__name">Доставка по Москве и области</h3>
+				<p class="advantages__text">Согласовываем удобный день доставки и установки. Привозим дверь в заводской упаковке и проверяем комплектацию перед монтажом.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="partners">
+	<div class="container partners__inner">
+		<div class="partners__head">
+			<div class="partners__label">
+				<span class="partners__label-line"></span>
+				Производители
+			</div>
+			<h2 class="partners__title">Двери ведущих производителей</h2>
+			<p class="partners__subtitle">Подбираем модели разных фабрик, чтобы предложить подходящий вариант по конструкции, дизайну и стоимости.</p>
+		</div>
+
+		<div class="partners__slider swiper">
+			<div class="swiper-wrapper">
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+				<div class="partners__slide swiper-slide">
+					<div class="partners__logo"><span class="partners__logo-img" aria-hidden="true"></span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="partners__footer">
+			<div class="partners__footer-info">
+				<span class="partners__bar"></span>
+				<span class="partners__note">Партнёры проверены временем</span>
+			</div>
+			<div class="partners__nav">
+				<button class="partners__arrow partners__arrow_prev" type="button" aria-label="Назад">
+					<svg class="icon"><use href="#chevron"></use></svg>
+				</button>
+				<button class="partners__arrow partners__arrow_next" type="button" aria-label="Вперёд">
+					<svg class="icon"><use href="#chevron"></use></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="lead">
+	<div class="container container--md lead__inner">
+		<div class="lead__head">
+			<h2 class="lead__title">Поможем подобрать<br>подходящую дверь</h2>
+			<p class="lead__subtitle">Расскажите, куда нужна дверь и какие параметры для вас важны. Специалист предложит несколько вариантов и рассчитает стоимость с доставкой и установкой.</p>
+		</div>
+
+		<div class="lead__content">
+			<form class="lead__form" action="#" method="post">
+				<div class="lead__fields">
+					<div class="lead__field">
+						<label class="lead__label" for="lead-name">Имя</label>
+						<input class="lead__input" id="lead-name" type="text" placeholder="Как к вам обращаться">
+					</div>
+					<div class="lead__field">
+						<label class="lead__label" for="lead-phone">Телефон</label>
+						<input class="lead__input" id="lead-phone" type="tel" placeholder="+7 (___) ___-__-__">
+					</div>
+				</div>
+
+				<div class="lead__field">
+					<span class="lead__label">Куда нужна дверь</span>
+					<div class="lead__options">
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="apartment" checked>
+							<span>Квартира</span>
+						</label>
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="house">
+							<span>Дом</span>
+						</label>
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="other">
+							<span>Другое</span>
+						</label>
+					</div>
+				</div>
+
+				<button class="lead__submit" type="submit">Получить подборку</button>
+
+				<p class="lead__consent">Нажимая «Получить подборку», вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+			</form>
+
+			<div class="lead__side">
+				<div class="lead__contact">
+					<div class="lead__status"><span class="lead__status-dot"></span>Сейчас на связи</div>
+					<a class="lead__phone" href="tel:+79957814960">+7 995 781-49-60</a>
+					<p class="lead__contact-note">Звоните, пишите — ответим в течение 15 минут с 9:00 до 21:00</p>
+					<div class="lead__messengers">
+						<a class="lead__messenger" href="#">
+							<svg class="icon"><use href="#whatsapp"></use></svg>
+							WhatsApp
+						</a>
+						<a class="lead__messenger lead__messenger_telegram" href="#">
+							<svg class="icon"><use href="#telegram"></use></svg>
+							Telegram
+						</a>
+					</div>
+				</div>
+
+				<div class="lead__benefits">
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>3–5 вариантов под ваш бюджет и стиль</div>
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>Точный расчёт с доставкой и установкой</div>
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>Замер в удобный день — бесплатно</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include("_bottom.html")
