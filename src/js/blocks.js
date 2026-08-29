@@ -5,4 +5,5 @@ import "../blocks/partners/partners.js";
 import "../blocks/callback/callback.js";
 import "../blocks/checkout/checkout.js";
 import "../blocks/catalog-page/catalog-page.js";
+import "../blocks/product/product.js";
 

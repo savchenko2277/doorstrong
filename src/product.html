@@ -1,0 +1,194 @@
+@@include("_head.html", {"id":"product"}) 
+@@include("_header.html") 
+
+<main class="product">
+	<div class="container product__inner">
+		<div class="product__main">
+			<div class="product__gallery">
+				<div class="product__slider swiper">
+					<div class="swiper-wrapper">
+						<a class="product__slide swiper-slide" href="img/products/1.webp" data-fancybox="gallery" aria-label="Фото товара 1"></a>
+						<a class="product__slide swiper-slide" href="img/products/2.webp" data-fancybox="gallery" aria-label="Фото товара 2"></a>
+						<a class="product__slide swiper-slide" href="img/products/3.webp" data-fancybox="gallery" aria-label="Фото товара 3"></a>
+						<a class="product__slide swiper-slide" href="img/products/4.webp" data-fancybox="gallery" aria-label="Фото товара 4"></a>
+					</div>
+					<button class="product__arrow product__arrow_prev" type="button" aria-label="Назад">
+						<svg class="icon"><use href="#chevron"></use></svg>
+					</button>
+					<button class="product__arrow product__arrow_next" type="button" aria-label="Вперёд">
+						<svg class="icon"><use href="#chevron"></use></svg>
+					</button>
+				</div>
+				<div class="product__slider-pagination"></div>
+				<div class="product__thumbs swiper">
+					<div class="swiper-wrapper">
+						<div class="product__thumb swiper-slide"></div>
+						<div class="product__thumb swiper-slide"></div>
+						<div class="product__thumb swiper-slide"></div>
+						<div class="product__thumb swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product__info">
+				<div class="product__brand">Гардиан</div>
+				<h1 class="product__title">Дверь «Гранит»</h1>
+				<div class="product__stock"><span class="product__stock-dot"></span>В наличии</div>
+				<div class="product__price">28 900 ₽</div>
+				<p class="product__desc">Надёжная входная дверь с усиленной шумоизоляцией и защитой от взлома. Подходит для квартиры и загородного дома.</p>
+				<ul class="product__features">
+					<li class="product__feature"><span class="product__feature-name">Производитель</span><span class="product__feature-value">Гардиан</span></li>
+					<li class="product__feature"><span class="product__feature-name">Тип</span><span class="product__feature-value">Входная</span></li>
+					<li class="product__feature"><span class="product__feature-name">Материал</span><span class="product__feature-value">Сталь</span></li>
+					<li class="product__feature"><span class="product__feature-name">Шумоизоляция</span><span class="product__feature-value">Есть</span></li>
+					<li class="product__feature"><span class="product__feature-name">Класс защиты</span><span class="product__feature-value">3 класс</span></li>
+					<li class="product__feature"><span class="product__feature-name">Гарантия</span><span class="product__feature-value">5 лет</span></li>
+				</ul>
+				<div class="product__actions">
+					<button class="product__add" type="button">В корзину</button>
+					<button class="product__buy" type="button" data-callback-open>Купить в один клик</button>
+				</div>
+			</div>
+		</div>
+				<section class="product__recommended">
+			<h2 class="product__recommended-title">Похожие товары</h2>
+			<div class="products__grid">
+				<article class="products__card">
+					<div class="products__img" aria-hidden="true"></div>
+					<div class="products__body">
+						<div class="products__brand">Эльбор</div>
+						<h3 class="products__name">Дверь «Премиум Люкс»</h3>
+						<div class="products__meta">
+							<div class="products__price"><span class="products__price-value">42 500</span><span class="products__price-currency">₽</span></div>
+							<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+						</div>
+						<div class="products__actions">
+							<a class="products__btn products__btn_outline" href="product.html">Подробнее</a>
+							<button class="products__btn" type="button">В корзину</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="products__card">
+					<div class="products__img" aria-hidden="true"></div>
+					<div class="products__body">
+						<div class="products__brand">Torex</div>
+						<h3 class="products__name">Дверь «Термо»</h3>
+						<div class="products__meta">
+							<div class="products__price"><span class="products__price-value">56 800</span><span class="products__price-currency">₽</span></div>
+							<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+						</div>
+						<div class="products__actions">
+							<a class="products__btn products__btn_outline" href="product.html">Подробнее</a>
+							<button class="products__btn" type="button">В корзину</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="products__card">
+					<div class="products__img" aria-hidden="true"></div>
+					<div class="products__body">
+						<div class="products__brand">Зетта</div>
+						<h3 class="products__name">Дверь «Классика»</h3>
+						<div class="products__meta">
+							<div class="products__price"><span class="products__price-value">26 900</span><span class="products__price-currency">₽</span></div>
+							<div class="products__stock"><span class="products__stock-dot"></span>В наличии</div>
+						</div>
+						<div class="products__actions">
+							<a class="products__btn products__btn_outline" href="product.html">Подробнее</a>
+							<button class="products__btn" type="button">В корзину</button>
+						</div>
+					</div>
+				</article>
+
+				<article class="products__card">
+					<div class="products__img" aria-hidden="true"></div>
+					<div class="products__body">
+						<div class="products__brand">Феррони</div>
+						<h3 class="products__name">Дверь «Скандия»</h3>
+						<div class="products__meta">
+							<div class="products__price"><span class="products__price-value">64 200</span><span class="products__price-currency">₽</span></div>
+							<div class="products__stock products__stock_order"><span class="products__stock-dot"></span>Под заказ</div>
+						</div>
+						<div class="products__actions">
+							<a class="products__btn products__btn_outline" href="product.html">Подробнее</a>
+							<button class="products__btn" type="button">В корзину</button>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+</main>
+
+<section class="lead">
+	<div class="container container--md lead__inner">
+		<div class="lead__head">
+			<h2 class="lead__title">Поможем подобрать<br>подходящую дверь</h2>
+			<p class="lead__subtitle">Расскажите, куда нужна дверь и какие параметры для вас важны. Специалист предложит несколько вариантов и рассчитает стоимость с доставкой и установкой.</p>
+		</div>
+
+		<div class="lead__content">
+			<form class="lead__form" action="#" method="post">
+				<div class="lead__fields">
+					<div class="lead__field">
+						<label class="lead__label" for="lead-name">Имя</label>
+						<input class="lead__input" id="lead-name" type="text" placeholder="Как к вам обращаться">
+					</div>
+					<div class="lead__field">
+						<label class="lead__label" for="lead-phone">Телефон</label>
+						<input class="lead__input" id="lead-phone" type="tel" placeholder="+7 (___) ___-__-__">
+					</div>
+				</div>
+
+				<div class="lead__field">
+					<span class="lead__label">Куда нужна дверь</span>
+					<div class="lead__options">
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="apartment" checked>
+							<span>Квартира</span>
+						</label>
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="house">
+							<span>Дом</span>
+						</label>
+						<label class="lead__option">
+							<input class="lead__radio" type="radio" name="place" value="other">
+							<span>Другое</span>
+						</label>
+					</div>
+				</div>
+
+				<button class="lead__submit" type="submit">Получить подборку</button>
+
+				<p class="lead__consent">Нажимая «Получить подборку», вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+			</form>
+
+			<div class="lead__side">
+				<div class="lead__contact">
+					<div class="lead__status"><span class="lead__status-dot"></span>Сейчас на связи</div>
+					<a class="lead__phone" href="tel:+79957814960">+7 995 781-49-60</a>
+					<p class="lead__contact-note">Звоните, пишите — ответим в течение 15 минут с 9:00 до 21:00</p>
+					<div class="lead__messengers">
+						<a class="lead__messenger" href="#">
+							<svg class="icon"><use href="#whatsapp"></use></svg>
+							WhatsApp
+						</a>
+						<a class="lead__messenger lead__messenger_telegram" href="#">
+							<svg class="icon"><use href="#telegram"></use></svg>
+							Telegram
+						</a>
+					</div>
+				</div>
+
+				<div class="lead__benefits">
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>3–5 вариантов под ваш бюджет и стиль</div>
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>Точный расчёт с доставкой и установкой</div>
+					<div class="lead__benefit"><svg class="icon lead__benefit-icon"><use href="#check"></use></svg>Замер в удобный день — бесплатно</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include("_bottom.html")
