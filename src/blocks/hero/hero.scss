@@ -214,6 +214,10 @@
 		color: var(--text-inverse);
 		transition: background-color 0.2s;
 
+		@include media('<=xlg') {
+			display: none;
+		}
+
 		.icon {
 			width: 22px;
 			height: 22px;
